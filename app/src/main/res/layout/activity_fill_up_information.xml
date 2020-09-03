@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="tw.com.hokei.kiosk2g.FillUpInformationActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainPlateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/inputScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:id="@+id/inputView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/inputScrollImageView"
+                android:layout_width="1920px"
+                android:layout_height="1080px"
+                android:background="@raw/member_background"/>
+
+
+            <EditText
+                android:id="@+id/surnameEditText"
+                android:layout_width="900px"
+                android:layout_height="80px"
+                android:layout_marginLeft="690px"
+                android:layout_marginTop="250px"
+                android:background="@drawable/edit_frame"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:inputType="textPersonName"
+                android:padding="3dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/surnameRequiredTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_toRightOf="@+id/surnameEditText"
+                android:layout_alignTop="@+id/surnameEditText"
+                android:layout_marginLeft="5px"
+                android:layout_centerVertical="false"
+                android:text="@string/required"
+                android:textColor="#FF0000"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="900px"
+                android:layout_height="80px"
+                android:layout_below="@+id/surnameEditText"
+                android:layout_alignLeft="@+id/surnameEditText"
+                android:layout_marginTop="40px"
+                android:background="@drawable/edit_frame"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:inputType="textPersonName"
+                android:padding="3dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/nameRequiredTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_toRightOf="@+id/nameEditText"
+                android:layout_alignTop="@+id/nameEditText"
+                android:layout_marginLeft="5px"
+                android:layout_centerVertical="false"
+                android:text="@string/required"
+                android:textColor="#FF0000"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:id="@+id/countryView"
+                android:layout_width="350px"
+                android:layout_height="80px"
+                android:layout_alignLeft="@+id/surnameEditText"
+                android:layout_below="@+id/nameEditText"
+                android:layout_marginTop="40px"
+                android:background="@drawable/edit_frame">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCodePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:ccp_showNameCode="false"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccpDialog_keyboardAutoPopup="false"
+                    app:ccp_textSize="25sp"
+                    app:ccp_arrowSize="20dp"
+                    app:ccp_defaultNameCode="TW"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="530px"
+                android:layout_height="80px"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/surnameEditText"
+                android:layout_alignTop="@+id/countryView"
+                android:layout_below="@+id/nameEditText"
+                android:ems="10"
+                android:background="@drawable/edit_frame"
+                android:inputType="number"
+                android:padding="3dp"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/phoneMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/surnameEditText"
+                android:layout_below="@+id/countryView"
+                android:layout_marginTop="1px"
+                android:textSize="18sp"
+                android:text="@string/phone_has_been_registered"
+                android:textColor="#FF0000"/>
+
+            <TextView
+                android:id="@+id/phoneRequiredTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_toRightOf="@+id/phoneEditText"
+                android:layout_alignTop="@+id/phoneEditText"
+                android:layout_marginLeft="5px"
+                android:layout_centerVertical="false"
+                android:text="@string/required"
+                android:textColor="#FF0000"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+            <EditText
+
+                android:id="@+id/emailEditText"
+                android:layout_width="900px"
+                android:layout_height="80px"
+                android:layout_alignLeft="@+id/surnameEditText"
+                android:layout_below="@+id/countryView"
+                android:layout_marginTop="70px"
+                android:background="@drawable/edit_frame"
+                android:inputType="textEmailAddress"
+                android:padding="3dp"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/emailRequiredTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_toRightOf="@+id/emailEditText"
+                android:layout_alignTop="@+id/emailEditText"
+                android:layout_marginLeft="5px"
+                android:layout_centerVertical="false"
+                android:text="@string/required"
+                android:textColor="#FF0000"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/emailMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/surnameEditText"
+                android:layout_below="@+id/emailEditText"
+                android:layout_marginTop="1px"
+                android:textSize="18sp"
+                android:text="@string/email_has_been_registered"
+                android:textColor="#FF0000"/>
+
+            <ImageButton
+                android:id="@+id/termsPrivacyImageButton"
+                android:layout_width="650px"
+                android:layout_height="55px"
+                android:layout_alignLeft="@+id/surnameEditText"
+                android:layout_below="@+id/emailEditText"
+                android:layout_marginTop="80px"
+                android:scaleType="fitXY"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:id="@+id/termsPrivacyCheckBoxImageButton"
+                android:layout_width="73px"
+                android:layout_height="69px"
+                android:layout_alignLeft="@+id/termsPrivacyImageButton"
+                android:layout_below="@+id/emailEditText"
+                android:layout_marginTop="70px"
+                android:layout_marginLeft="-55px"
+                android:scaleType="fitXY"
+                android:background="#00000000"
+                android:src="@drawable/member_terms_privacy_unchecked" />
+
+            <TextView
+                android:id="@+id/termsPrivacyRequiredTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="80px"
+                android:layout_below="@+id/emailEditText"
+                android:layout_toRightOf="@+id/termsPrivacyImageButton"
+                android:layout_alignTop="@+id/termsPrivacyCheckBoxImageButton"
+                android:layout_alignBottom="@+id/termsPrivacyCheckBoxImageButton"
+                android:layout_marginLeft="5px"
+                android:layout_centerVertical="false"
+                android:gravity="center_vertical"
+                android:text="@string/required"
+                android:textColor="#FF0000"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/exitImageButton"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/empty"
+        android:background="@drawable/exit_button_style"
+        android:src="@drawable/exit_button_style"
+        android:scaleType="fitStart" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/exitImageButton"-->
+        <!--android:layout_width="72px"-->
+        <!--android:layout_height="72px"-->
+        <!--android:layout_marginRight="50px"-->
+        <!--android:layout_marginTop="50px"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@drawable/exit_button_style" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/customerServiceImageView"
+        android:layout_width="186px"
+        android:layout_height="210px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="170px"
+       />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/textServiceImageView"
+        android:layout_width="114px"
+        android:layout_height="107px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+        />
+
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/confirmImageButton"
+        android:layout_width="410px"
+        android:layout_height="114px"
+        android:background="@raw/member_button_next_press"
+        android:src="@raw/member_button_next_normal"
+        android:scaleType="fitStart"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40px" />
+
+    <RelativeLayout
+        android:id="@+id/termsPrivacyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@raw/member_terms_privacy">
+
+        <tw.com.hokei.kiosk2g.GifImageButtonView
+            android:id="@+id/termsPrivacyCloseImageButton"
+            android:layout_width="341px"
+            android:layout_height="97px"
+            android:background="@raw/member_terms_button_close_press"
+            android:src="@raw/member_terms_button_close_normal"
+            android:scaleType="fitStart"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30px" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_custom_keyboard" />
+    <include android:id="@+id/textServiceView" layout="@layout/activity_text_service" />
+    <include android:id="@+id/waitAnimationView" layout="@layout/activity_wait_animation" />
+    <include layout="@layout/activity_sip" />
+    <include android:id="@+id/exitView" layout="@layout/activity_exit" />
+    <include android:id="@+id/idleView" layout="@layout/activity_idle" />
+    <include android:id="@+id/sensorIdleView" layout="@layout/activity_sensor_idle" />
+    <include android:id="@+id/mostTopView" layout="@layout/activity_empty" />
+
+</RelativeLayout>

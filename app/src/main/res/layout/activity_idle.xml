@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/idleView"
+    android:background="@raw/ldle_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/idleCounterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1000px"
+        android:layout_marginTop="560px"
+        android:textSize="25sp"
+        android:textColor="#FF0000"
+        android:text="10"/>
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/idleExitImageButton"
+        android:layout_width="409px"
+        android:layout_height="120px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="490px"
+        android:layout_marginTop="610px"
+        android:scaleType="fitStart"
+        android:background="@raw/ldle_button_exit_press"
+        android:src="@raw/ldle_button_exit_normal"/>
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/idleContinueImageButton"
+        android:layout_width="409px"
+        android:layout_height="120px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="330px"
+        android:layout_marginTop="610px"
+        android:scaleType="fitStart"
+        android:background="@raw/ldle_button_continue_press"
+        android:src="@raw/ldle_button_continue_normal" />
+
+</RelativeLayout>

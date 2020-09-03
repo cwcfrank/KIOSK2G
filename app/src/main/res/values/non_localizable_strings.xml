@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<!-- Do not translate any of the strings below -->
+	<bool name="isTablet">false</bool>
+
+    <string name="pref_extra_accounts">pref_nb_accounts_extra</string>
+	<string name="pref_default_account_key">pref_default_account</string>
+
+    <string name="tunnel_mode_entry_value_3G_only">3G_only</string>
+	<string name="tunnel_mode_entry_value_always">always</string>
+    <string name="tunnel_mode_entry_value_auto">auto</string>
+
+    <string name="pref_transport_udp_key">pref_transport_udp_key</string>
+	<string name="pref_transport_tcp_key">pref_transport_tcp_key</string>
+	<string name="pref_transport_tls_key">pref_transport_tls_key</string>
+	<string name="pref_transport_use_random_ports_key">pref_transport_use_random_ports_key</string>
+
+    <string name="pref_proxy_key">pref_proxy_key</string>
+    <string name="pref_domain_key">pref_domain_key</string>
+    <string name="pref_passwd_key">pref_passwd_key</string>
+    <string name="pref_username_key">pref_username_key</string>
+    <string name="pref_auth_userid_key">pref_auth_userid_key</string>
+    <string name="pref_debug_key">pref_debug_key</string>
+
+    <string name="pref_wifi_only_key">pref_wifi_only_key</string>
+
+    <string name="pref_video_use_front_camera_key">pref_video_use_front_camera_key</string>
+    <string name="pref_autostart_key">pref_autostart_key</string>
+    <string name="pref_enable_outbound_proxy_key">Outbound proxy</string>
+    <string name="pref_background_mode_key">pref_background_mode_key</string>
+
+    <string name="push_reg_id_key">push_reg_id_key</string>
+    <string name="pref_push_notification_key">pref_push_notification_key</string>
+
+    <string name="pref_image_sharing_server_key">pref_image_sharing_server_key</string>
+	<string name="pref_remote_provisioning_key">pref_remote_provisioning_key</string>
+
+    <string name="pref_expire_key">pref_expire_key</string>
+
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textServiceView"
+    android:layout_width="match_parent"
+    android:layout_height="655px"
+    android:background="#9E000000"
+    android:visibility="gone">
+
+    <ImageButton
+        android:id="@+id/textServiceCloseImageButton"
+        android:layout_width="135px"
+        android:layout_height="125px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="50px"
+        android:background="@drawable/hide_text_service_style" />
+
+        <ListView
+            android:id="@+id/textServiceListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/textServiceInputView"
+            android:layout_marginLeft="300px"
+            android:layout_marginRight="300px"
+            android:background="#00000000"
+            android:choiceMode="singleChoice"
+            android:divider="#00000000"
+            android:dividerHeight="50px"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dip"
+            android:fastScrollEnabled="true"
+            android:gravity="center"
+            android:requiresFadingEdge="none"
+            android:scrollbarStyle="outsideOverlay" />
+        <RelativeLayout
+            android:id="@+id/textServiceInputView"
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/send_to_customer_center_text_panel">
+
+            <tw.com.hokei.kiosk2g.CustomEditText
+                android:id="@+id/textServiceEditText"
+                android:layout_width="1100px"
+                android:layout_height="70px"
+                android:layout_marginLeft="260px"
+                android:layout_marginTop="18px"
+                android:background="#00000000"
+                android:hint="please"
+                android:inputType="text"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textIsSelectable="true"
+                android:textSize="30sp" />
+            <tw.com.hokei.kiosk2g.GifImageButtonView
+                android:id="@+id/textServiceSendImageButton"
+                android:layout_width="95px"
+                android:layout_height="99px"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="6px"
+                android:layout_marginRight="340px"
+                android:background="@drawable/exit_button_style"
+                android:src="@drawable/exit_button_style"
+                android:scaleType="fitStart"
+                />
+            <!--<ImageButton-->
+                <!--android:id="@+id/textServiceSendImageButton"-->
+                <!--android:layout_width="95px"-->
+                <!--android:layout_height="99px"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginTop="6px"-->
+                <!--android:layout_marginRight="340px"-->
+                <!--android:background="@drawable/send_to_customer_center_style" />-->
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    tools:context="tw.com.hokei.kiosk2g.HomeActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:id="@+id/maskView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/callMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@raw/call_message">
+
+        <tw.com.hokei.kiosk2g.GifImageButtonView
+            android:id="@+id/callMessageVoiceImageButton"
+            android:layout_width="324px"
+            android:layout_height="377px"
+            android:background="@raw/call_button_voix_press"
+            android:src="@raw/call_button_voix_normal"
+            android:scaleType="fitStart"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="360px"
+            android:layout_marginBottom="120px" />
+
+        <tw.com.hokei.kiosk2g.GifImageButtonView
+            android:id="@+id/callMessageTextImageButton"
+            android:layout_width="324px"
+            android:layout_height="377px"
+            android:background="@raw/call_button_text_press"
+            android:src="@raw/call_button_text_normal"
+            android:scaleType="fitStart"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="360px"
+            android:layout_marginBottom="120px" />
+
+        <tw.com.hokei.kiosk2g.GifImageButtonView
+            android:id="@+id/callMessagePassImageButton"
+            android:layout_width="324px"
+            android:layout_height="377px"
+            android:background="@raw/call_button_pass_press"
+            android:src="@raw/call_button_pass_normal"
+            android:scaleType="fitStart"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="360px"
+            android:layout_marginBottom="120px" />
+
+    </RelativeLayout>
+
+    <include android:id="@+id/waitAnimationView" layout="@layout/activity_wait_animation" />
+    <include layout="@layout/activity_sip" />
+    <include android:id="@+id/idleView" layout="@layout/activity_idle" />
+    <include android:id="@+id/sensorIdleView" layout="@layout/activity_sensor_idle" />
+    <include android:id="@+id/mostTopView" layout="@layout/activity_empty" />
+
+</RelativeLayout>

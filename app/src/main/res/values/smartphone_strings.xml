@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="service_name">SmartPhone Service</string>
+	<string name="addressbook_label">SmartPhone</string>
+    <string name="notification_registered">%s registered</string>
+	<string name="notification_register_failure">%s failed to register</string>
+    <string name="sync_account_name">SmartPhone contacts</string>
+
+	<!-- smartphone -->
+    <string name="ok">OK</string>
+
+    <!-- Launch screen -->
+
+    <!-- Assistant -->
+    <string name="assistant_error_bad_credentials">Incorrect username or password</string>
+    <string name="assistant_openh264_downloading">Downloading OpenH264</string>
+    <string name="assistant_openh264_error">Sorry an error has occurred.</string>
+    <string name="wizard_failed">An error occurred, try again later.</string>
+    <string name="assistant_phone_number_unavailable">This phone number is already in used.\r\nPlease type a different number.\r\nYou can delete your existing account if you want to reuse your phone number.</string>
+
+    <!-- Status -->
+	<string name="invalid_email">Invalid email</string>
+	<string name="account_already_exist">Account already exist</string>
+	<string name="phone_number_not_exist">This account does not exist</string>
+	<string name="invalid_username">Invalid username</string>
+    <string name="invalid_display_name">Invalid display name</string>
+	<string name="username_too_short">Username too short</string>
+	<string name="username_too_long">Username too long</string>
+	<string name="username_invalid_size">Username length invalid</string>
+	<string name="phone_number_too_long">Phone number too long</string>
+	<string name="phone_number_too_short">Phone number too short</string>
+	<string name="phone_number_invalid">Invalid phone number</string>
+	<string name="password_too_short">Password too short</string>
+	<string name="password_too_long">Password too long</string>
+	<string name="request_failed">Failed to query the server. Please try again later</string>
+    <string name="country_code_invalid">Country code invalid</string>
+
+	<!-- In-app -->
+
+    <!-- Dailer -->
+
+    <!-- History -->
+
+    <!-- Contacts -->
+
+    <!-- Chat -->
+
+    <!-- Status Bar -->
+
+    <!-- Side Menu -->
+
+    <!-- Call -->
+    <string name="unknown_incoming_call_name">Unknown</string>
+
+    <!-- About -->
+
+    <!-- Service -->
+	<string name="incall_notif_active">Audio call ongoing</string>
+	<string name="incall_notif_paused">Paused call ongoing</string>
+	<string name="incall_notif_video">Video capturing call ongoing</string>
+	<string name="notification_started">started</string>
+	<string name="unread_messages">%i unread messages</string>
+	<string name="missed_calls_notif_title">Missed call</string>
+
+    <!-- Errors -->
+    <string name="error">Error</string>
+    <string name="error_network_unreachable">Network is unreachable</string>
+
+    <!-- Account Settings -->
+    <string name="pref_transport_udp">UDP</string>
+	<string name="pref_transport_tcp">TCP</string>
+	<string name="pref_transport_tls">TLS</string>
+
+    <!-- Settings -->
+    <!--do not change order without changing corresponding entry_values in non_localizable_strings.xml-->
+
+    <!-- Audio settings -->
+
+    <!-- Video settings -->
+
+    <!-- Call settings -->
+
+    <!-- Chat settings -->
+
+    <!-- Network settings -->
+
+    <!-- Advanced settings -->
+
+    <!-- Audio hack settings -->
+
+    <!-- Content description -->
+    <string name="content_description_incoming_file">Incoming file</string>
+</resources>

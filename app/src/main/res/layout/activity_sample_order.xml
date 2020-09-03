@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainView"
+    android:background="@raw/sample_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    tools:context="tw.com.hokei.kiosk2g.SampleOrderActivity">
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/exitImageButton"-->
+        <!--android:layout_width="72px"-->
+        <!--android:layout_height="72px"-->
+        <!--android:layout_marginRight="50px"-->
+        <!--android:layout_marginTop="50px"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@drawable/exit_button_style" />-->
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/exitImageButton"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/empty"
+        android:background="@drawable/exit_button_style"
+        android:src="@drawable/exit_button_style"
+        android:scaleType="fitStart" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/customerServiceImageView"
+        android:layout_width="186px"
+        android:layout_height="210px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="170px" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/textServiceImageView"
+        android:layout_width="114px"
+        android:layout_height="107px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+       />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/videoImageView"
+        android:layout_width="795px"
+        android:layout_height="554px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="195px"
+        android:layout_marginTop="400px"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@raw/sample_left_gif"/>
+
+    <TextView
+        android:id="@+id/colorRequiredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="170px"
+        android:layout_marginTop="360px"
+        android:layout_centerVertical="true"
+        android:text="@string/required"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/colorLeftImageButton"
+        android:layout_width="44px"
+        android:layout_height="45px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="889px"
+        android:layout_marginTop="427px"
+        android:background="@drawable/arrow_left_button_style"
+        android:visibility="gone"
+        android:scaleType="fitCenter"/>
+
+    <ImageButton
+        android:id="@+id/colorRightImageButton"
+        android:layout_width="44px"
+        android:layout_height="45px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="141px"
+        android:layout_marginTop="427px"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:background="@drawable/arrow_right_button_style"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/colorRecyclerView"
+        android:layout_width="684px"
+        android:layout_height="89px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="145px"
+        android:layout_marginTop="425px"
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    <TextView
+        android:id="@+id/ringDiameterRequiredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="160px"
+        android:layout_marginTop="595px"
+        android:layout_centerVertical="true"
+        android:text="@string/required"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/ringDiameterSpinner"
+        android:layout_width="345px"
+        android:layout_height="85px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="340px"
+        android:layout_marginRight="360px"
+        android:background="@drawable/ringdiameter_spinner_left"/>
+    
+    <ImageView
+        android:id="@+id/ringDiameterRightImageView"
+        android:layout_width="95px"
+        android:layout_height="85px"
+        android:layout_alignTop="@+id/ringDiameterSpinner"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="265px"
+        android:src="@drawable/ringdiameter_spinner_right"/>
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/confirmImageButton"
+        android:layout_width="410px"
+        android:layout_height="114px"
+        android:background="@raw/sample_button_next_press"
+        android:src="@raw/sample_button_next_normal"
+        android:scaleType="fitStart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="300px"
+        android:layout_marginBottom="50px" />
+
+    <include layout="@layout/activity_custom_keyboard" />
+    <include android:id="@+id/textServiceView" layout="@layout/activity_text_service" />
+    <include android:id="@+id/waitAnimationView" layout="@layout/activity_wait_animation" />
+    <include layout="@layout/activity_sip" />
+    <include android:id="@+id/exitView" layout="@layout/activity_exit" />
+    <include android:id="@+id/idleView" layout="@layout/activity_idle" />
+    <include android:id="@+id/sensorIdleView" layout="@layout/activity_sensor_idle" />
+    <include android:id="@+id/mostTopView" layout="@layout/activity_empty" />
+
+</RelativeLayout>

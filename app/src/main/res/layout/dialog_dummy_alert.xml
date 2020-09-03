@@ -1,0 +1,8 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/dummyView"
+    android:layout_width="10dp"
+    android:layout_height="10dp"
+	android:background="#00000000">
+
+</RelativeLayout>

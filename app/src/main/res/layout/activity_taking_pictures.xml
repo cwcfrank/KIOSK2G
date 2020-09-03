@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainView"
+    android:background="@raw/photo_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    tools:context="tw.com.hokei.kiosk2g.TakingPicturesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:layout_weight="1">
+
+                    <com.serenegiant.widget.UVCCameraTextureView
+                        android:id="@+id/camera1_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitCenter"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:src="@drawable/left_mask" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.serenegiant.widget.UVCCameraTextureView
+                        android:id="@+id/camera2_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitCenter"/>
+
+<!--
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mask1"
+                        android:visibility="visible"
+                        android:scaleType="fitXY"/>
+-->
+                    <ImageView
+                        android:id="@+id/goodPositionImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/taking_pic_good_position"/>
+
+                    <ImageView
+                        android:id="@+id/badPositionImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/taking_pic_bad_position"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.serenegiant.widget.UVCCameraTextureView
+                        android:id="@+id/camera3_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitCenter" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/left_mask"
+                        android:visibility="gone"
+                        android:scaleType="fitXY"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/nextImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/next_button_style"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/exitImageButton"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/empty"
+        android:background="@drawable/exit_button_style"
+        android:src="@drawable/exit_button_style"
+        android:scaleType="fitStart" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/exitImageButton"-->
+        <!--android:layout_width="72px"-->
+        <!--android:layout_height="72px"-->
+        <!--android:layout_marginRight="50px"-->
+        <!--android:layout_marginTop="50px"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@drawable/exit_button_style" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/customerServiceImageView"
+        android:layout_width="186px"
+        android:layout_height="210px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="170px"
+        android:visibility="gone"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/movingLeftImageView"
+        android:layout_width="403px"
+        android:layout_height="211px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0px"
+        android:layout_marginTop="434px"
+        android:src="@drawable/taking_pic_moving_left"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/movingRightImageView"
+        android:layout_width="403px"
+        android:layout_height="211px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="434px"
+        android:src="@drawable/taking_pic_moving_right"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/movingDownImageView"
+        android:layout_width="1342px"
+        android:layout_height="274px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="289px"
+        android:layout_marginTop="0px"
+        android:src="@drawable/taking_pic_moving_down"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/movingUpImageView"
+        android:layout_width="1268px"
+        android:layout_height="382px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="326px"
+        android:layout_marginBottom="0px"
+        android:src="@drawable/taking_pic_moving_up"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/movingFrontImageView"
+        android:layout_width="1399px"
+        android:layout_height="260px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="260px"
+        android:layout_marginBottom="0px"
+        android:src="@drawable/taking_pic_moving_front"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/movingBackImageView"
+        android:layout_width="1356px"
+        android:layout_height="242px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="282px"
+        android:layout_marginBottom="0px"
+        android:src="@drawable/taking_pic_moving_back"/>
+
+    <ImageView
+        android:id="@+id/readyCountImageView"
+        android:layout_width="510px"
+        android:layout_height="588px"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/taking_pic_count_1"/>
+
+    <include android:id="@+id/waitAnimationView" layout="@layout/activity_wait_animation" />
+    <include layout="@layout/activity_sip" />
+    <include android:id="@+id/exitView" layout="@layout/activity_exit" />
+    <include android:id="@+id/sensorIdleView" layout="@layout/activity_sensor_idle" />
+    <include android:id="@+id/mostTopView" layout="@layout/activity_empty" />
+
+    <RelativeLayout
+        android:id="@+id/flashView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFFFFFFF"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainView"
+    android:background="@raw/branch_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    tools:context="tw.com.hokei.kiosk2g.BranchActivity">
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/exitImageButton"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/empty"
+        android:background="@drawable/exit_button_style"
+        android:src="@drawable/exit_button_style"
+        android:scaleType="fitStart" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/exitImageButton"-->
+        <!--android:layout_width="72px"-->
+        <!--android:layout_height="72px"-->
+        <!--android:layout_marginRight="50px"-->
+        <!--android:layout_marginTop="50px"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:contentDescription="@string/empty"-->
+        <!--android:background="@drawable/exit_button_style" />-->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/customerServiceImageView"
+        android:layout_width="186px"
+        android:layout_height="210px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="170px"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/textServiceImageView"
+        android:layout_width="114px"
+        android:layout_height="107px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/branchDemoImageView"
+        android:layout_width="573px"
+        android:layout_height="784px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_marginLeft="300px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@raw/branch_demo_gif"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/branchStartImageView"
+        android:layout_width="573px"
+        android:layout_height="784px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_marginRight="310px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@raw/branch_start_gif"/>
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/branchDemoButton"
+        android:layout_width="409px"
+        android:layout_height="108px"
+        android:background="@raw/branch_button_demo_press"
+        android:src="@raw/branch_button_demo_normal"
+        android:scaleType="fitStart"
+        android:layout_marginLeft="380px"
+        android:layout_marginBottom="50px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/branchStartButton"
+        android:layout_width="489px"
+        android:layout_height="162px"
+        android:background="@raw/branch_button_start_press"
+        android:src="@raw/branch_button_start_normal"
+        android:scaleType="fitStart"
+        android:layout_marginRight="340px"
+        android:layout_marginBottom="30px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <include layout="@layout/activity_custom_keyboard" />
+    <include android:id="@+id/textServiceView" layout="@layout/activity_text_service" />
+    <include android:id="@+id/waitAnimationView" layout="@layout/activity_wait_animation" />
+    <include layout="@layout/activity_sip" />
+    <include android:id="@+id/exitView" layout="@layout/activity_exit" />
+    <include android:id="@+id/idleView" layout="@layout/activity_idle" />
+    <include android:id="@+id/sensorIdleView" layout="@layout/activity_sensor_idle" />
+    <include android:id="@+id/mostTopView" layout="@layout/activity_empty" />
+
+</RelativeLayout>

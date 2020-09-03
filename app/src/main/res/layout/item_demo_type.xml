@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="146px"
+	android:layout_height="166px"
+	android:layout_gravity="center"
+	android:gravity="center">
+
+	<ImageView
+		android:id="@+id/itemTypeImageView"
+		android:layout_width="106px"
+		android:layout_height="126px"
+		android:scaleType="fitXY"
+		android:layout_centerInParent="true"
+		android:src="@drawable/color_gold_button"/>
+
+	<ImageView
+		android:id="@+id/itemTypeSelectedImageView"
+		android:layout_width="146px"
+		android:layout_height="166px"
+		android:scaleType="fitXY"
+		android:layout_centerInParent="true"
+		android:src="@drawable/color_button_selected"/>
+
+</RelativeLayout>

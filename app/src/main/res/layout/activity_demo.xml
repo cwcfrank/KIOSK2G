@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainView"
+    android:background="@raw/demo_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    tools:context="tw.com.hokei.kiosk2g.DemoActivity">
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/exitImageButton"-->
+        <!--android:layout_width="72px"-->
+        <!--android:layout_height="72px"-->
+        <!--android:layout_marginRight="50px"-->
+        <!--android:layout_marginTop="50px"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@drawable/exit_button_style" />-->
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/exitImageButton"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/empty"
+        android:background="@drawable/exit_button_style"
+        android:src="@drawable/exit_button_style"
+        android:scaleType="fitStart" />
+
+    
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/customerServiceImageView"
+        android:layout_width="186px"
+        android:layout_height="210px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="170px"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/textServiceImageView"
+        android:layout_width="114px"
+        android:layout_height="107px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+       />
+
+    <ImageButton
+        android:id="@+id/typeLeftImageButton"
+        android:layout_width="44px"
+        android:layout_height="45px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="156px"
+        android:layout_marginTop="355px"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:background="@drawable/arrow_left_button_style"/>
+
+    <ImageButton
+        android:id="@+id/typeRightImageButton"
+        android:layout_width="44px"
+        android:layout_height="45px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="785px"
+        android:layout_marginTop="355px"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:background="@drawable/arrow_right_button_style"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/typeRecyclerView"
+        android:layout_width="584px"
+        android:layout_height="166px"
+        android:scrollbars="none"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="250px"
+        android:layout_marginTop="294px" />
+
+    <ImageButton
+        android:id="@+id/typeUpImageButton"
+        android:layout_width="44px"
+        android:layout_height="45px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="472px"
+        android:layout_marginTop="590px"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:background="@drawable/arrow_up_button_style"/>
+
+    <ImageButton
+        android:id="@+id/typeDownImageButton"
+        android:layout_width="44px"
+        android:layout_height="45px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="472px"
+        android:layout_marginTop="930px"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:background="@drawable/arrow_down_button_style"/>
+
+    <ListView
+        android:id="@+id/colorListView"
+        android:layout_width="267px"
+        android:layout_height="350px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="400px"
+        android:layout_marginTop="640px"
+        android:background="#00000000"
+        android:scrollbars="none"
+        android:clickable="false"
+        android:divider="#00000000"
+        android:dividerHeight="10dip"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="50px"
+        android:fastScrollEnabled="true"
+        android:gravity="center"
+        android:scrollbarStyle="outsideOverlay"/>
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/returnImageButton"
+        android:layout_width="409px"
+        android:layout_height="108px"
+        android:background="@raw/demo_button_return_press"
+        android:src="@raw/demo_button_return_normal"
+        android:scaleType="fitStart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="360px"
+        android:layout_marginBottom="30px" />
+
+    <ImageView
+        android:id="@+id/faceRingImageView"
+        android:layout_width="1000px"
+        android:layout_height="640px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="190px"
+        android:scaleType="centerInside"/>
+
+    <ImageView
+        android:id="@+id/faceCoverImageView"
+        android:layout_width="1100px"
+        android:layout_height="719px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="170px"
+        android:scaleType="fitCenter"
+        android:src="@raw/demo_360touch"/>
+
+    <include android:id="@+id/waitAnimationView" layout="@layout/activity_wait_animation" />
+    <include layout="@layout/activity_custom_keyboard" />
+    <include android:id="@+id/textServiceView" layout="@layout/activity_text_service" />
+
+    <include layout="@layout/activity_sip" />
+    <include android:id="@+id/exitView" layout="@layout/activity_exit" />
+    <include android:id="@+id/idleView" layout="@layout/activity_idle" />
+    <include android:id="@+id/sensorIdleView" layout="@layout/activity_sensor_idle" />
+    <include android:id="@+id/mostTopView" layout="@layout/activity_empty" />
+
+</RelativeLayout>

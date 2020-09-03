@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :ccp:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19b82ce5c9bc7ef4ff25eb727093d496/ccp/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19b82ce5c9bc7ef4ff25eb727093d496/ccp/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19b82ce5c9bc7ef4ff25eb727093d496/ccp/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

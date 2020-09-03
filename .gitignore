@@ -1,0 +1,7 @@
+# Project exclude paths
+/.gradle/
+/app/.cxx/
+/app/.externalNativeBuild/
+/libuvccamera/build/
+/opencv/build/
+/usbCameraCommon/build/

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainView"
+    android:background="@drawable/select_language_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    android:gravity="center_horizontal"
+    tools:context="tw.com.hokei.kiosk2g.SelectLanguageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <tw.com.hokei.kiosk2g.GifImageButtonView
+            android:id="@+id/englishImageButton"
+            android:layout_width="430px"
+            android:layout_height="121px"
+            android:background="@raw/english_button_normal"
+            android:src="@raw/english_button_pressed"
+            android:layout_marginTop="600px"
+            android:scaleType="fitStart"
+            />
+        <tw.com.hokei.kiosk2g.GifImageButtonView
+            android:id="@+id/frenchImageButton"
+            android:layout_width="430px"
+            android:layout_height="121px"
+            android:background="@raw/english_button_normal"
+            android:src="@raw/english_button_pressed"
+            android:layout_marginTop="600px"
+            android:scaleType="fitStart"
+            />
+        <tw.com.hokei.kiosk2g.GifImageButtonView
+            android:id="@+id/germanImageButton"
+            android:layout_width="430px"
+            android:layout_height="121px"
+            android:background="@raw/english_button_normal"
+            android:src="@raw/english_button_pressed"
+            android:layout_marginTop="600px"
+            android:scaleType="fitStart"
+            />
+        <tw.com.hokei.kiosk2g.GifImageButtonView
+            android:id="@+id/japanImageButton"
+            android:layout_width="430px"
+            android:layout_height="121px"
+            android:background="@raw/english_button_normal"
+            android:src="@raw/english_button_pressed"
+            android:layout_marginTop="600px"
+            android:scaleType="fitStart"
+            />
+        <tw.com.hokei.kiosk2g.GifImageButtonView
+            android:id="@+id/chineseImageButton"
+            android:layout_width="430px"
+            android:layout_height="121px"
+            android:background="@raw/english_button_normal"
+            android:src="@raw/english_button_pressed"
+            android:layout_marginTop="600px"
+            android:scaleType="fitStart"
+            />
+        <!--<ImageButton-->
+            <!--android:id="@+id/englishImageButton"-->
+            <!--android:layout_width="430px"-->
+            <!--android:layout_height="121px"-->
+            <!--android:layout_marginTop="600px"-->
+            <!--android:background="@drawable/language_english_button_style" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/frenchImageButton"-->
+            <!--android:layout_width="430px"-->
+            <!--android:layout_height="121px"-->
+            <!--android:layout_marginTop="600px"-->
+            <!--android:background="@drawable/language_french_button_style"/>-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/germanImageButton"-->
+            <!--android:layout_width="430px"-->
+            <!--android:layout_height="121px"-->
+            <!--android:layout_marginTop="600px"-->
+            <!--android:background="@drawable/language_german_button_style"/>-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/japanImageButton"-->
+            <!--android:layout_width="430px"-->
+            <!--android:layout_height="121px"-->
+            <!--android:layout_marginTop="600px"-->
+            <!--android:background="@drawable/language_japan_button_style"/>-->
+
+    </LinearLayout>
+
+    <include android:id="@+id/waitAnimationView" layout="@layout/activity_wait_animation" />
+    <include layout="@layout/activity_sip" />
+    <include android:id="@+id/exitView" layout="@layout/activity_exit" />
+    <include android:id="@+id/idleView" layout="@layout/activity_idle" />
+    <include android:id="@+id/sensorIdleView" layout="@layout/activity_sensor_idle" />
+    <include android:id="@+id/mostTopView" layout="@layout/activity_empty" />
+
+</RelativeLayout>

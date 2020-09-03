@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: :liblinphone-sdk:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/088910bcee98269472df282e2e291cdf/liblinphone-sdk/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/088910bcee98269472df282e2e291cdf/liblinphone-sdk/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/088910bcee98269472df282e2e291cdf/liblinphone-sdk/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/app/libs/liblinphone-sdk-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

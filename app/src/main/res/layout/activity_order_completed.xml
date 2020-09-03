@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@raw/finish_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    tools:context="tw.com.hokei.kiosk2g.OrderCompletedActivity">
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/exitImageButton"-->
+        <!--android:layout_width="72px"-->
+        <!--android:layout_height="72px"-->
+        <!--android:layout_marginRight="50px"-->
+        <!--android:layout_marginTop="50px"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@drawable/exit_button_style" />-->
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/exitImageButton"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/empty"
+        android:background="@drawable/exit_button_style"
+        android:src="@drawable/exit_button_style"
+        android:scaleType="fitStart" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/customerServiceImageView"
+        android:layout_width="186px"
+        android:layout_height="210px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="170px"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/textServiceImageView"
+        android:layout_width="114px"
+        android:layout_height="107px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="50px"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/leftImageView"
+        android:layout_width="615px"
+        android:layout_height="514px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="320px"
+        android:layout_marginLeft="180px"
+        android:background="#00000000"
+        android:scaleType="fitStart"
+        android:src="@raw/finish_left_gif"/>
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/cancelImageButton"
+        android:layout_width="339px"
+        android:layout_height="91px"
+        android:background="@raw/finish_button_cancel_press"
+        android:src="@raw/finish_button_cancel_normal"
+        android:scaleType="fitStart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="639px"
+        android:layout_marginBottom="100px" />
+
+    <tw.com.hokei.kiosk2g.GifImageButtonView
+        android:id="@+id/finishImageButton"
+        android:layout_width="406px"
+        android:layout_height="121px"
+        android:background="@raw/finish_button_finish_press"
+        android:src="@raw/finish_button_finish_normal"
+        android:scaleType="fitStart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="150px"
+        android:layout_marginBottom="90px" />
+
+    <include layout="@layout/activity_custom_keyboard" />
+    <include android:id="@+id/textServiceView" layout="@layout/activity_text_service" />
+    <include android:id="@+id/waitAnimationView" layout="@layout/activity_wait_animation" />
+    <include layout="@layout/activity_sip" />
+    <include android:id="@+id/idleView" layout="@layout/activity_idle" />
+    <include android:id="@+id/exitView" layout="@layout/activity_exit" />
+    <include android:id="@+id/sensorIdleView" layout="@layout/activity_sensor_idle" />
+    <include android:id="@+id/mostTopView" layout="@layout/activity_empty" />
+
+</RelativeLayout>
